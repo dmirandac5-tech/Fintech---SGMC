@@ -1,0 +1,23 @@
+@startuml matriz-trazabilidad
+title Matriz de trazabilidad: requisito - caso de uso - clase / módulo
+
+skinparam defaultFontName Segoe UI
+skinparam legendBackgroundColor #FFFFFF
+skinparam legendBorderColor #999999
+
+legend top center
+|=  Req. |=  Descripción |=  Caso de uso |=  Clase / módulo |
+| R1 | Registrar y consultar clientes | Registrar cliente | ""Cliente"" |
+| R2 | Otorgar créditos con plan de cuotas (amortización francesa, ajuste de última cuota) | Solicitar / Desembolsar crédito | ""Credito"", ""PlanAmortizacion"", ""Cuota"", ""PlanAmortizacionFactory"" |
+| R3 | Registrar pagos aplicando la prelación (gastos, moratorio, corriente, capital) | Registrar pago de cuota | ""Pago"", ""AplicacionPago"", ""PrelacionPago"" (Chain of Responsibility) |
+| R4 | Calcular interés moratorio solo sobre capital en mora (prohibición de anatocismo) | Calcular mora | ""CalculadoraMora"" |
+| R5 | Clasificar el tramo de mora de forma derivada y reversible | Calcular mora / Generar cierre | ""CalculadoraMora"", ""TramoMora"" (Specification) |
+| R6 | Representar dinero sin error de punto flotante, inmutable | (transversal a todos) | ""Dinero"" (Value Object) |
+| R7 | Versionar tasas y tramos como política, no como constantes | Solicitar / Desembolsar crédito | ""PoliticaCredito"" (Strategy) |
+| R8 | Reestructurar créditos sin perder el historial de riesgo | Reestructurar crédito | ""Credito"", ""HistorialEstadoCredito"" |
+| R9 | Declarar incobrable y tercerizar la gestión de cobro | Declarar incobrable | ""Credito"", ""Movimiento"" (""CASTIGO_INCOBRABLE"" / ""RECUPERACION_INCOBRABLE"") |
+| R10 | Reportar cierres y cartera en riesgo junto con lo dado por incobrable | Generar cierre / Consultar cartera en riesgo | ""Cierre"", ""CarteraRiesgo"" |
+| R11 | Garantizar idempotencia en pagos y en cierres | Registrar pago / Generar cierre | ""Pago.claveIdempotencia"", ""Cierre.fechaCorte"" |
+endlegend
+
+@enduml
