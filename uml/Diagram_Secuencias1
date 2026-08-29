@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" modified="2026-08-25T00:00:00.000Z" type="device">
+  <diagram id="DS02" name="DS-02 Desembolsar crédito">
+    <mxGraphModel dx="1420" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Títulos -->
+        <mxCell id="title" parent="1" value="Diagrama de Secuencia — DS-02: Desembolsar crédito" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1">
+          <mxGeometry x="30" y="20" width="1500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" value="Fintech - SGMC — Lógica de Factory/Builder para Plan de Amortización" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;" vertex="1">
+          <mxGeometry x="30" y="58" width="1500" height="28" as="geometry" />
+        </mxCell>
+        
+        <!-- Participantes (Lifelines) -->
+        <mxCell id="p1" parent="1" value="Asesor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;align=center;" vertex="1">
+          <mxGeometry x="50" y="100" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" value="DesembolsarCredito&#xa;(caso de uso)" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1">
+          <mxGeometry x="210" y="100" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" value="RepositorioCreditos" style="shape=cylinder;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+          <mxGeometry x="390" y="100" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="1" value="PoliticaCredito&#xa;(repositorio)" style="shape=cylinder;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1">
+          <mxGeometry x="570" y="100" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="1" value="PlanAmortizacionFactory" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1">
+          <mxGeometry x="750" y="100" width="160" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="p6" parent="1" value="Reloj" style="shape=cylinder;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
+          <mxGeometry x="960" y="100" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="p7" parent="1" value="GeneradorIds" style="shape=cylinder;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1">
+          <mxGeometry x="1140" y="100" width="130" height="55" as="geometry" />
+        </mxCell>
+        
+        <!-- Líneas de vida (Lifelines) -->
+        <mxCell id="life_p1" parent="1" points="[[0,0],[0,1320]]" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;" edge="1" source="p1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="115" y="155" as="sourcePoint"/><mxPoint x="115" y="1475" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="life_p2" parent="1" points="[[0,0],[0,1320]]" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;" edge="1" source="p2">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="275" y="155" as="sourcePoint"/><mxPoint x="275" y="1475" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="life_p3" parent="1" points="[[0,0],[0,1320]]" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;" edge="1" source="p3">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="455" y="155" as="sourcePoint"/><mxPoint x="455" y="1475" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="life_p4" parent="1" points="[[0,0],[0,1320]]" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;" edge="1" source="p4">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="635" y="155" as="sourcePoint"/><mxPoint x="635" y="1475" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="life_p5" parent="1" points="[[0,0],[0,1320]]" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;" edge="1" source="p5">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="830" y="155" as="sourcePoint"/><mxPoint x="830" y="1475" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="life_p6" parent="1" points="[[0,0],[0,1320]]" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;" edge="1" source="p6">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1025" y="155" as="sourcePoint"/><mxPoint x="1025" y="1475" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="life_p7" parent="1" points="[[0,0],[0,1320]]" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;" edge="1" source="p7">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1205" y="155" as="sourcePoint"/><mxPoint x="1205" y="1475" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        
+        <!-- Cuadros de Activación -->
+        <mxCell id="act_p2" parent="1" style="fillColor=#eae8e8;strokeColor=#666666;" vertex="1">
+          <mxGeometry x="267" y="190" width="15" height="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="act_p5" parent="1" style="fillColor=#eae8e8;strokeColor=#666666;" vertex="1">
+          <mxGeometry x="822" y="550" width="15" height="610" as="geometry" />
+        </mxCell>
+        
+        <!-- Mensajes del Flujo Principal -->
+        <mxCell id="m1" parent="1" value="desembolsar(solicitudId)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="115" y="190" as="sourcePoint"/><mxPoint x="267" y="190" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m2" parent="1" value="obtenerSolicitud(solicitudId)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="282" y="220" as="sourcePoint"/><mxPoint x="450" y="220" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="r2" parent="1" value="SolicitudCredito [estado = APROBADO]" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="450" y="250" as="sourcePoint"/><mxPoint x="282" y="250" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m3" parent="1" value="hoy()" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="282" y="290" as="sourcePoint"/><mxPoint x="1020" y="290" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="r3" parent="1" value="fechaDesembolso" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1020" y="320" as="sourcePoint"/><mxPoint x="282" y="320" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m4" parent="1" value="obtenerVigente(fechaDesembolso)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="282" y="360" as="sourcePoint"/><mxPoint x="630" y="360" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="r4" parent="1" value="PoliticaCredito (tasa, base de conteo)" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="630" y="390" as="sourcePoint"/><mxPoint x="282" y="390" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m5" parent="1" value="nuevoId()" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="282" y="430" as="sourcePoint"/><mxPoint x="1200" y="430" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="r5" parent="1" value="creditoId" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1200" y="460" as="sourcePoint"/><mxPoint x="282" y="460" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        
+        <!-- Llamada a Factory -->
+        <mxCell id="m6" parent="1" value="construir(capital, tasaMensual, plazoMeses)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="282" y="550" as="sourcePoint"/><mxPoint x="822" y="550" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        
+        <!-- Lógica Interna Factory (Self Messages) -->
+        <mxCell id="f1" parent="1" value="cuota = P·i·(1+i)^n / ((1+i)^n - 1)&#xa;(si i = 0 → cuota = P / n)" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="837" y="580" as="sourcePoint"/><mxPoint x="837" y="610" as="targetPoint"/><Array as="points"><mxPoint x="880" y="580"/><mxPoint x="880" y="610"/></Array></mxGeometry>
+        </mxCell>
+        
+        <!-- Bucle LOOP -->
+        <mxCell id="loop1" parent="1" value="loop k = 1 .. n-1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;align=left;verticalAlign=top;" vertex="1">
+          <mxGeometry x="720" y="640" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" parent="1" value="interes_k = redondear(saldo(k-1) · i)" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="837" y="670" as="sourcePoint"/><mxPoint x="837" y="700" as="targetPoint"/><Array as="points"><mxPoint x="880" y="670"/><mxPoint x="880" y="700"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="f3" parent="1" value="amortizacion_k = cuota - interes_k" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="837" y="720" as="sourcePoint"/><mxPoint x="837" y="750" as="targetPoint"/><Array as="points"><mxPoint x="880" y="720"/><mxPoint x="880" y="750"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="f4" parent="1" value="saldo_k = saldo(k-1) - amortizacion_k" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="837" y="770" as="sourcePoint"/><mxPoint x="837" y="800" as="targetPoint"/><Array as="points"><mxPoint x="880" y="770"/><mxPoint x="880" y="800"/></Array></mxGeometry>
+        </mxCell>
+        
+        <!-- Fin de Factory -->
+        <mxCell id="f5" parent="1" value="última cuota:&#xa;amortizacion_n = saldo(n-1)&#xa;cuota_n = amortizacion_n + interes_n" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="837" y="860" as="sourcePoint"/><mxPoint x="837" y="910" as="targetPoint"/><Array as="points"><mxPoint x="880" y="860"/><mxPoint x="880" y="910"/></Array></mxGeometry>
+        </mxCell>
+        <mxCell id="f6" parent="1" value="verificar invariante:&#xa;Σ amortizacion_k = capital, saldo_n = 0.00" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="837" y="950" as="sourcePoint"/><mxPoint x="837" y="990" as="targetPoint"/><Array as="points"><mxPoint x="880" y="950"/><mxPoint x="880" y="990"/></Array></mxGeometry>
+        </mxCell>
+        
+        <mxCell id="r6" parent="1" value="PlanAmortizacion (n cuotas)" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;exitX=0;exitY=1;" edge="1" source="act_p5">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="822" y="1160" as="sourcePoint"/><mxPoint x="282" y="1160" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        
+        <!-- Persistencia Final -->
+        <mxCell id="m7" parent="1" value="guardarCredito(credito, plan) [estado = VIGENTE]" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="282" y="1210" as="sourcePoint"/><mxPoint x="450" y="1210" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m8" parent="1" value="registrarMovimiento(DESEMBOLSO, capital)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="282" y="1250" as="sourcePoint"/><mxPoint x="450" y="1250" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="m9" parent="1" value="registrarHistorialEstado(APROBADO -> VIGENTE)" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="282" y="1290" as="sourcePoint"/><mxPoint x="450" y="1290" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        
+        <!-- Confirmación Final -->
+        <mxCell id="r1" parent="1" value="confirmacion(credito, plan)" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" edge="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="267" y="1360" as="sourcePoint"/><mxPoint x="115" y="1360" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
