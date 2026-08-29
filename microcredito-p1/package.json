@@ -1,0 +1,18 @@
+{
+  "name": "microcredito-p1",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Nucleo de calculo ejecutable del Sistema de Gestion de Microcredito (E4, Proyecto 1 - Analisis de Sistemas II 037, UMG 2026).",
+  "scripts": {
+    "test": "tsc --noEmit && vitest run",
+    "test:watch": "vitest",
+    "reporte": "vitest run tests/reporte-casos-referencia.test.ts --disableConsoleIntercept",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "typescript": "^5.6.3",
+    "vitest": "^4.1.11"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.formatOnSave": false,
+  "files.eol": "\n",
+  "search.exclude": {
+    "**/node_modules": true
+  }
+}
