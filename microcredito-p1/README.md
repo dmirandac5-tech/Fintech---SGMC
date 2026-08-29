@@ -59,16 +59,46 @@ directamente en los archivos de `src/dominio/`.
 
 ```
 microcredito-p1/
-├── package.json          scripts: test
-├── tsconfig.json         strict: true
-├── src/dominio/          núcleo puro (E4) — sin infraestructura
-├── tests/                pruebas unitarias, incluidos los casos de referencia
-└── docs/
-    ├── E1-modelo-dominio.md
-    ├── E4-nucleo-ejecutable.md
-    ├── diagramas/        UML de E1, en formato editable (PlantUML)
-    ├── adr/              pendiente (E5)
-    └── api/              pendiente (E5)
+│
+├── src/
+│   └── dominio/
+│       ├── dinero.ts
+│       ├── plan-amortizacion.ts
+│       ├── calculadora-mora.ts
+│       ├── prelacion-pago.ts
+│       ├── cartera.ts
+│       ├── credito.ts
+│       ├── estado-credito.ts
+│       ├── politica-credito.ts
+│       ├── movimiento.ts
+│       └── reloj.ts
+│
+├── tests/
+│   └── ...
+│
+├── docs/
+│   ├── E1-modelo-dominio.md
+│   ├── E4-nucleo-ejecutable.md
+│   ├── adr/
+│   │   ├── ADR-001-arquitectura.md
+│   │   └── ADR-002-representacion-monetaria.md
+│   │
+│   ├── api/
+│   │   └── openapi.yaml
+│   │
+│   └── diagramas/
+│       ├── casos-de-uso.puml
+│       ├── clases.puml
+│       ├── secuencia-registrar-pago.puml
+│       ├── secuencia-desembolsar-credito.puml
+│       ├── estados-credito.puml
+│       └── actividad-cierre-mensual.puml
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── README.md
 ```
 
 ## Cómo ver los diagramas
