@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" 
+  <diagram id="EstadosCredito" name="Ciclo de vida del crédito">
+    <mxGraphModel dx="573" dy="322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Ciclo de vida del crédito (tabla 6.7.1 — completo, con regularización)" vertex="1">
+          <mxGeometry height="40" width="1400" x="50" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="80" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="st_solicitado" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="solicitado" vertex="1">
+          <mxGeometry height="50" width="140" x="200" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="st_aprobado" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="aprobado" vertex="1">
+          <mxGeometry height="50" width="140" x="450" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="st_rechazado" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="rechazado" vertex="1">
+          <mxGeometry height="50" width="140" x="200" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="st_anulado" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="anulado" vertex="1">
+          <mxGeometry height="50" width="140" x="450" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="st_desembolsado" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="desembolsado" vertex="1">
+          <mxGeometry height="50" width="140" x="700" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="st_vigente" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="vigente" vertex="1">
+          <mxGeometry height="50" width="140" x="700" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="st_en_mora" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="en_mora" vertex="1">
+          <mxGeometry height="50" width="140" x="700" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="st_reestructurado" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="reestructurado" vertex="1">
+          <mxGeometry height="50" width="140" x="350" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="st_cancelado" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="cancelado" vertex="1">
+          <mxGeometry height="50" width="140" x="1000" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="st_incobrable" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="incobrable" vertex="1">
+          <mxGeometry height="50" width="140" x="700" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="end_rechazado" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="255" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="end_anulado" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="505" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="end_cancelado" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="1220" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="end_incobrable" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="755" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="t0" edge="1" parent="1" source="init" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;" target="st_solicitado" value="Cliente pide">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" edge="1" parent="1" source="st_solicitado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;" target="st_aprobado" value="Comité aprueba&#xa;[cumple política de crédito]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" edge="1" parent="1" source="st_solicitado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;" target="st_rechazado" value="Comité rechaza">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_end" edge="1" parent="1" source="st_rechazado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;" target="end_rechazado">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" edge="1" parent="1" source="st_aprobado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;" target="st_desembolsado" value="Se desembolsa&#xa;[capital entregado al cliente]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" edge="1" parent="1" source="st_aprobado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;" target="st_anulado" value="Cliente desiste / expira&#xa;[antes del desembolso]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t4_end" edge="1" parent="1" source="st_anulado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;" target="end_anulado">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" edge="1" parent="1" source="st_desembolsado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;" target="st_vigente">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t6" edge="1" parent="1" source="st_vigente" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=left;" target="st_en_mora" value="Vence una cuota impagada&#xa;[díasAtraso ≥ 1]">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t7" edge="1" parent="1" source="st_vigente" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;" target="st_cancelado" value="Paga la última cuota&#xa;[saldo = 0.00 exacto]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t7_end" edge="1" parent="1" source="st_cancelado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;" target="end_cancelado">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t8" edge="1" parent="1" source="st_en_mora" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=right;curved=1;" target="st_vigente" value="Paga TODO lo vencido&#xa;[díasAtraso = 0] (regularización)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t9" edge="1" parent="1" source="st_en_mora" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" target="st_en_mora" value="Paga PARTE de lo vencido, o sube&#xa;por más atraso [tramo se recalcula]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="520" />
+              <mxPoint x="880" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t10" edge="1" parent="1" source="st_en_mora" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;" target="st_reestructurado" value="Acuerdo de nuevas condiciones&#xa;[Comité autoriza]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t11" edge="1" parent="1" source="st_reestructurado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;" target="st_vigente" value="Cumple su nuevo plan al día&#xa;[según política de cura;&#xa;sigue marcado en riesgo, 6.8]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t12" edge="1" parent="1" source="st_reestructurado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;" target="st_en_mora" value="Se atrasa en el nuevo plan&#xa;[díasAtraso ≥ 1]">
+          <mxGeometry relative="1" y="-35" as="geometry">
+            <mxPoint x="-4" as="offset" />
+            <Array as="points">
+              <mxPoint x="595" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t13" edge="1" parent="1" source="st_reestructurado" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;curved=1;" target="st_cancelado" value="Paga la última cuota nueva&#xa;[saldo = 0.00 exacto]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="660" />
+              <mxPoint x="1070" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t14" edge="1" parent="1" source="st_en_mora" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;" target="st_incobrable" value="Supera 120 días sin arreglo&#xa;[díasAtraso &gt; 120]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t14_end" edge="1" parent="1" source="st_incobrable" style="verticalAlign=bottom;endArrow=block;strokeWidth=1;align=center;" target="end_incobrable" value="(terminal contable)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t15" edge="1" parent="1" source="st_incobrable" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" target="st_incobrable" value="Cliente paga después vía casa de cobro&#xa;[se registra como recuperación de&#xa;incobrable; NO regresa a la cartera]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="750" />
+              <mxPoint x="880" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_en_mora" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingLeft=5;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="ÚNICO estado &quot;en_mora&quot;. Los tramos&#xa;Mora1 (1-30) / Mora2 (31-60) / Mora3 (61-90) /&#xa;Vencido (91-120) son una CLASIFICACIÓN&#xa;DERIVADA de díasDeAtraso (patrón&#xa;Specification), recalculada en cada pago&#xa;y en cada cierre — no son estados formales&#xa;de esta máquina (regla de 6.7.1).&#xa;Ver clasificacion-tramo-mora.puml." vertex="1">
+          <mxGeometry height="130" width="300" x="970" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="note_incobrable" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingLeft=5;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" value="Baja CONTABLE, no un perdón (6.7).&#xa;Gestión tercerizada a casa de cobro;&#xa;lo recuperado va a cuenta separada." vertex="1">
+          <mxGeometry height="70" width="280" x="970" y="740" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
