@@ -1,0 +1,238 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="DS-02 Desembolsar crédito" id="mAp7eW58XD0Oh35Wn1xg">
+    <mxGraphModel dx="1075" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EWVDFbDET6zob9TQeK7t-8" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="Diagrama de Secuencia — DS-02: Desembolsar crédito" vertex="1">
+          <mxGeometry height="40" width="1500" x="151" y="618.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-9" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;" value="Fintech - SGMC — Lógica de Factory/Builder para Plan de Amortización" vertex="1">
+          <mxGeometry height="28" width="1500" x="151" y="656.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-10" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;align=center;" value="Asesor" vertex="1">
+          <mxGeometry height="55" width="130" x="171" y="698.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="DesembolsarCredito&#xa;(caso de uso)" vertex="1">
+          <mxGeometry height="55" width="130" x="331" y="698.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-12" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="RepositorioCreditos" vertex="1">
+          <mxGeometry height="55" width="130" x="511" y="698.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-13" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="PoliticaCredito&#xa;(repositorio)" vertex="1">
+          <mxGeometry height="55" width="130" x="691" y="698.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="PlanAmortizacionFactory" vertex="1">
+          <mxGeometry height="55" width="160" x="871" y="698.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-15" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Reloj" vertex="1">
+          <mxGeometry height="55" width="130" x="1081" y="698.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-16" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="GeneradorIds" vertex="1">
+          <mxGeometry height="55" width="130" x="1261" y="698.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-17" edge="1" parent="1" points="[[0,0],[0,1320]]" source="EWVDFbDET6zob9TQeK7t-10" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="236" y="753.5714285714287" as="sourcePoint" />
+            <mxPoint x="236" y="2073.5714285714284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-18" edge="1" parent="1" points="[[0,0],[0,1320]]" source="EWVDFbDET6zob9TQeK7t-11" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="396" y="753.5714285714287" as="sourcePoint" />
+            <mxPoint x="396" y="2073.5714285714284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-19" edge="1" parent="1" points="[[0,0],[0,1320]]" source="EWVDFbDET6zob9TQeK7t-12" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="576" y="753.5714285714287" as="sourcePoint" />
+            <mxPoint x="576" y="2073.5714285714284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-20" edge="1" parent="1" points="[[0,0],[0,1320]]" source="EWVDFbDET6zob9TQeK7t-13" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="756" y="753.5714285714287" as="sourcePoint" />
+            <mxPoint x="756" y="2073.5714285714284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-21" edge="1" parent="1" points="[[0,0],[0,1320]]" source="EWVDFbDET6zob9TQeK7t-14" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="951" y="753.5714285714287" as="sourcePoint" />
+            <mxPoint x="951" y="2073.5714285714284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-22" edge="1" parent="1" points="[[0,0],[0,1320]]" source="EWVDFbDET6zob9TQeK7t-15" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1146" y="753.5714285714287" as="sourcePoint" />
+            <mxPoint x="1146" y="2073.5714285714284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-23" edge="1" parent="1" points="[[0,0],[0,1320]]" source="EWVDFbDET6zob9TQeK7t-16" style="dashed=1;startArrow=none;endArrow=none;strokeWidth=1;strokeColor=#666666;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1326" y="753.5714285714287" as="sourcePoint" />
+            <mxPoint x="1326" y="2073.5714285714284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-24" parent="1" style="fillColor=#eae8e8;strokeColor=#666666;" vertex="1">
+          <mxGeometry height="1210" width="15" x="388" y="788.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-25" parent="1" style="fillColor=#eae8e8;strokeColor=#666666;" vertex="1">
+          <mxGeometry height="610" width="15" x="943" y="1148.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-26" edge="1" parent="1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeWidth=1;" value="desembolsar(solicitudId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="236" y="788.5714285714287" as="sourcePoint" />
+            <mxPoint x="388" y="788.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-27" edge="1" parent="1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" value="obtenerSolicitud(solicitudId)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="818.5714285714287" as="sourcePoint" />
+            <mxPoint x="571" y="818.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-28" edge="1" parent="1" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" value="SolicitudCredito [estado = APROBADO]">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="571" y="848.5714285714287" as="sourcePoint" />
+            <mxPoint x="403" y="848.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-29" edge="1" parent="1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" value="hoy()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="888.5714285714287" as="sourcePoint" />
+            <mxPoint x="1141" y="888.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-30" edge="1" parent="1" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" value="fechaDesembolso">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1141" y="918.5714285714287" as="sourcePoint" />
+            <mxPoint x="403" y="918.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-31" edge="1" parent="1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" value="obtenerVigente(fechaDesembolso)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="958.5714285714287" as="sourcePoint" />
+            <mxPoint x="751" y="958.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-32" edge="1" parent="1" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" value="PoliticaCredito (tasa, base de conteo)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="751" y="988.5714285714287" as="sourcePoint" />
+            <mxPoint x="403" y="988.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-33" edge="1" parent="1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" value="nuevoId()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="1028.5714285714287" as="sourcePoint" />
+            <mxPoint x="1321" y="1028.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-34" edge="1" parent="1" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" value="creditoId">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1321" y="1058.5714285714287" as="sourcePoint" />
+            <mxPoint x="403" y="1058.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-35" edge="1" parent="1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeWidth=1;" value="construir(capital, tasaMensual, plazoMeses)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="1148.5714285714287" as="sourcePoint" />
+            <mxPoint x="943" y="1148.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-36" edge="1" parent="1" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" value="cuota = P·i·(1+i)^n / ((1+i)^n - 1)&#xa;(si i = 0 → cuota = P / n)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1001" y="1178.5714285714287" />
+              <mxPoint x="1001" y="1208.5714285714287" />
+            </Array>
+            <mxPoint x="958" y="1178.5714285714287" as="sourcePoint" />
+            <mxPoint x="958" y="1208.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-37" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;align=left;verticalAlign=top;" value="loop k = 1 .. n-1" vertex="1">
+          <mxGeometry height="170" width="280" x="841" y="1238.5714285714287" as="geometry" />
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-38" edge="1" parent="1" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" value="interes_k = redondear(saldo(k-1) · i)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1001" y="1268.5714285714287" />
+              <mxPoint x="1001" y="1298.5714285714287" />
+            </Array>
+            <mxPoint x="958" y="1268.5714285714287" as="sourcePoint" />
+            <mxPoint x="958" y="1298.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-39" edge="1" parent="1" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" value="amortizacion_k = cuota - interes_k">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1001" y="1318.5714285714287" />
+              <mxPoint x="1001" y="1348.5714285714287" />
+            </Array>
+            <mxPoint x="958" y="1318.5714285714287" as="sourcePoint" />
+            <mxPoint x="958" y="1348.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-40" edge="1" parent="1" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" value="saldo_k = saldo(k-1) - amortizacion_k">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1001" y="1368.5714285714287" />
+              <mxPoint x="1001" y="1398.5714285714287" />
+            </Array>
+            <mxPoint x="958" y="1368.5714285714287" as="sourcePoint" />
+            <mxPoint x="958" y="1398.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-41" edge="1" parent="1" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" value="última cuota:&#xa;amortizacion_n = saldo(n-1)&#xa;cuota_n = amortizacion_n + interes_n">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1001" y="1458.5714285714287" />
+              <mxPoint x="1001" y="1508.5714285714287" />
+            </Array>
+            <mxPoint x="958" y="1458.5714285714287" as="sourcePoint" />
+            <mxPoint x="958" y="1508.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-42" edge="1" parent="1" style="align=left;verticalAlign=bottom;endArrow=block;strokeWidth=1;curved=1;" value="verificar invariante:&#xa;Σ amortizacion_k = capital, saldo_n = 0.00">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1001" y="1548.5714285714287" />
+              <mxPoint x="1001" y="1588.5714285714287" />
+            </Array>
+            <mxPoint x="958" y="1548.5714285714287" as="sourcePoint" />
+            <mxPoint x="958" y="1588.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-43" edge="1" parent="1" source="EWVDFbDET6zob9TQeK7t-25" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;exitX=0;exitY=1;" value="PlanAmortizacion (n cuotas)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="943" y="1758.5714285714287" as="sourcePoint" />
+            <mxPoint x="403" y="1758.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-44" edge="1" parent="1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" value="guardarCredito(credito, plan) [estado = VIGENTE]">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="1808.5714285714287" as="sourcePoint" />
+            <mxPoint x="571" y="1808.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-45" edge="1" parent="1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" value="registrarMovimiento(DESEMBOLSO, capital)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="1848.5714285714287" as="sourcePoint" />
+            <mxPoint x="571" y="1848.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-46" edge="1" parent="1" style="verticalAlign=bottom;endArrow=block;entryX=0;entryY=0.01;strokeWidth=1;" value="registrarHistorialEstado(APROBADO -&gt; VIGENTE)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="403" y="1888.5714285714287" as="sourcePoint" />
+            <mxPoint x="571" y="1888.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWVDFbDET6zob9TQeK7t-47" edge="1" parent="1" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeWidth=1;" value="confirmacion(credito, plan)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="388" y="1958.5714285714287" as="sourcePoint" />
+            <mxPoint x="236" y="1958.5714285714287" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
