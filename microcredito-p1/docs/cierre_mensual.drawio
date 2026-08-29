@@ -1,0 +1,299 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="OReres67QIzh9_TI6Lh0">
+    <mxGraphModel dx="1850" dy="1875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\n\ntitle Diagrama de Actividades - Flujo de Cierre Mensual\n\nskinparam monochrome true\nskinparam shadowing false\nskinparam activity {\n    BackgroundColor White\n    BorderColor Black\n    FontColor Black\n}\nskinparam ArrowColor Black\nskinparam NoteBackgroundColor White\nskinparam NoteBorderColor Black\n\nstart\n\n:Definir fecha de corte mensual;\n\n:Obtener movimientos del período;\n\n:Consolidar desembolsos del período;\n\n:Consolidar recuperaciones\n(cobros) por concepto;\n\n:Calcular devengo de interés;\n\n:Actualizar días de atraso\ny marcación de mora;\n\n:Determinar saldo de\ncartera activa;\n\n:Calcular cartera en riesgo\npor tramo;\n\n:Identificar créditos dados\npor incobrables en el período;\n\n:Calcular provisiones;\n\n:Determinar créditos activos;\n\n:Identificar vencimientos próximos;\n\n:Consolidar cifras del\ncierre mensual;\n\nif (¿Existe un cierre para la misma fecha de corte?) then (Sí)\n\n    :Reproducir el mismo\n    resultado del cierre;\n\n    :Evitar duplicación\n    de movimientos;\n\nelse (No)\n\n    :Registrar cierre mensual;\n\n    :Congelar cifras del período\n    según fecha de corte;\n\nendif\n\nstop\n\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="EtN-v0ARJStxVAuJ8TzY-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="start_0" plantUmlBaseStyle="ellipse;fillColor=#222222;strokeColor=#222222;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-2">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="ellipse;fillColor=#222222;strokeColor=#222222;" vertex="1">
+            <mxGeometry height="20" width="20" x="168.5" y="-350" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Definir fecha de corte mensual" plantUmlId="action_1" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Definir fecha de corte mensual" id="EtN-v0ARJStxVAuJ8TzY-3">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="36" width="187" x="86.5" y="-270" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_2" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-4">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-2" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-3">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="50" as="sourcePoint" />
+              <mxPoint x="178" y="70" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Obtener movimientos del período" plantUmlId="action_3" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Obtener movimientos del período" id="EtN-v0ARJStxVAuJ8TzY-5">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="36" width="203" x="78.5" y="-180" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_4" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-6">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-3" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-5">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="106" as="sourcePoint" />
+              <mxPoint x="178" y="126" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Consolidar desembolsos del período" plantUmlId="action_5" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Consolidar desembolsos del período" id="EtN-v0ARJStxVAuJ8TzY-7">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="36" width="223" x="68.5" y="-90" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_6" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-8">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-5" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-7">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="162" as="sourcePoint" />
+              <mxPoint x="178" y="182" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Consolidar recuperaciones&#xa;(cobros) por concepto" plantUmlId="action_7" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Consolidar recuperaciones&#xa;(cobros) por concepto" id="EtN-v0ARJStxVAuJ8TzY-9">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="53" width="166" x="95.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_8" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-10">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-7" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-9">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="218" as="sourcePoint" />
+              <mxPoint x="178" y="238" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Calcular devengo de interés" plantUmlId="action_9" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Calcular devengo de interés" id="EtN-v0ARJStxVAuJ8TzY-11">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="36" width="173" x="91.5" y="110" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_10" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-12">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-9" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-11">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="291" as="sourcePoint" />
+              <mxPoint x="178" y="311" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Actualizar días de atraso&#xa;y marcación de mora" plantUmlId="action_11" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Actualizar días de atraso&#xa;y marcación de mora" id="EtN-v0ARJStxVAuJ8TzY-13">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="53" width="159" x="100.5" y="200" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_12" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-14">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-11" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-13">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="347" as="sourcePoint" />
+              <mxPoint x="178" y="367" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Determinar saldo de&#xa;cartera activa" plantUmlId="action_13" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Determinar saldo de&#xa;cartera activa" id="EtN-v0ARJStxVAuJ8TzY-15">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="53" width="129" x="115.5" y="310" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_14" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-16">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-13" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-15">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="420" as="sourcePoint" />
+              <mxPoint x="178" y="440" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Calcular cartera en riesgo&#xa;por tramo" plantUmlId="action_15" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Calcular cartera en riesgo&#xa;por tramo" id="EtN-v0ARJStxVAuJ8TzY-17">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="53" width="160" x="100.5" y="415.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_16" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-18">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-15" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-17">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="493" as="sourcePoint" />
+              <mxPoint x="178" y="513" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Identificar créditos dados&#xa;por incobrables en el período" plantUmlId="action_17" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Identificar créditos dados&#xa;por incobrables en el período" id="EtN-v0ARJStxVAuJ8TzY-19">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="53" width="183" x="89" y="500" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_18" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-20">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-17" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-19">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="566" as="sourcePoint" />
+              <mxPoint x="178" y="586" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Calcular provisiones" plantUmlId="action_19" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Calcular provisiones" id="EtN-v0ARJStxVAuJ8TzY-21">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="36" width="132" x="114" y="590" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_20" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-22">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-19" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-21">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="639" as="sourcePoint" />
+              <mxPoint x="178" y="659" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Determinar créditos activos" plantUmlId="action_21" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Determinar créditos activos" id="EtN-v0ARJStxVAuJ8TzY-23">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="36" width="170" x="95.5" y="650" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_22" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-24">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-21" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-23">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="695" as="sourcePoint" />
+              <mxPoint x="178" y="715" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Identificar vencimientos próximos" plantUmlId="action_23" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Identificar vencimientos próximos" id="EtN-v0ARJStxVAuJ8TzY-25">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="36" width="207" x="76.5" y="710" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_24" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-26">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-23" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-25">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="751" as="sourcePoint" />
+              <mxPoint x="178" y="771" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Consolidar cifras del&#xa;cierre mensual" plantUmlId="action_25" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Consolidar cifras del&#xa;cierre mensual" id="EtN-v0ARJStxVAuJ8TzY-27">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="53" width="133" x="115.5" y="780" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_26" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-28">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-25" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-27">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="807" as="sourcePoint" />
+              <mxPoint x="178" y="827" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="¿Existe un cierre para la misma fecha de corte?" plantUmlId="diamond_28" plantUmlBaseStyle="shape=hexagon;perimeter=hexagonPerimeter2;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontSize=11;" plantUmlBaseValue="¿Existe un cierre para la misma fecha de corte?" id="EtN-v0ARJStxVAuJ8TzY-29">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="shape=hexagon;perimeter=hexagonPerimeter2;fillColor=#F1F1F1;strokeColor=#181818;whiteSpace=wrap;fontSize=11;" vertex="1">
+            <mxGeometry height="28" width="282.5" x="39.25" y="860" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_29" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-30">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-27" style="endArrow=classic;endSize=8;strokeColor=#181818;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-29">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="880" as="sourcePoint" />
+              <mxPoint x="178" y="900" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sí" plantUmlId="e_30" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" plantUmlBaseValue="Sí" id="EtN-v0ARJStxVAuJ8TzY-31">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-29" style="endArrow=classic;endSize=8;strokeColor=#181818;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-32">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+              <mxPoint x="36.75" y="914" as="sourcePoint" />
+              <mxPoint x="96" y="948" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Reproducir el mismo&#xa;resultado del cierre" plantUmlId="action_32" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Reproducir el mismo&#xa;resultado del cierre" id="EtN-v0ARJStxVAuJ8TzY-32">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="53" width="132" x="-92.75" y="1014" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Evitar duplicación&#xa;de movimientos" plantUmlId="action_33" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Evitar duplicación&#xa;de movimientos" id="EtN-v0ARJStxVAuJ8TzY-33">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="53" width="119" x="-86.25" y="1169" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_34" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-34">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-32" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-33">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="96" y="1001" as="sourcePoint" />
+              <mxPoint x="96" y="1021" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="No" plantUmlId="e_35" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" plantUmlBaseValue="No" id="EtN-v0ARJStxVAuJ8TzY-35">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-29" style="endArrow=classic;endSize=8;strokeColor=#181818;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-36">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+              <mxPoint x="319.25" y="914" as="sourcePoint" />
+              <mxPoint x="279" y="948" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Registrar cierre mensual" plantUmlId="action_37" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Registrar cierre mensual" id="EtN-v0ARJStxVAuJ8TzY-36">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="36" width="153" x="320" y="1031" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Congelar cifras del período&#xa;según fecha de corte" plantUmlId="action_38" plantUmlBaseStyle="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" plantUmlBaseValue="Congelar cifras del período&#xa;según fecha de corte" id="EtN-v0ARJStxVAuJ8TzY-37">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rounded=1;absoluteArcSize=1;arcSize=25;fillColor=#F1F1F1;strokeColor=#181818;strokeWidth=0.5;whiteSpace=wrap;fontSize=12;align=left;spacingLeft=6;" vertex="1">
+            <mxGeometry height="53" width="170" x="320" y="1180" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_39" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-38">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-36" style="endArrow=classic;endSize=8;strokeColor=#181818;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-37">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="279" y="984" as="sourcePoint" />
+              <mxPoint x="279" y="1004" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="merge_40" plantUmlBaseStyle="rhombus;fillColor=#F1F1F1;strokeColor=#181818;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-39">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="rhombus;fillColor=#F1F1F1;strokeColor=#181818;" vertex="1">
+            <mxGeometry height="24" width="24" x="186.63" y="1330" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_41" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-40">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-33" style="endArrow=classic;endSize=8;strokeColor=#181818;entryX=0;entryY=0.5;entryDx=0;entryDy=0;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="EtN-v0ARJStxVAuJ8TzY-39">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="80" y="1340" />
+              </Array>
+              <mxPoint x="96" y="1074" as="sourcePoint" />
+              <mxPoint x="166" y="1106" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_43" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-41">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-37" style="endArrow=classic;endSize=8;strokeColor=#181818;entryX=1;entryY=0.5;entryDx=0;entryDy=0;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="EtN-v0ARJStxVAuJ8TzY-39">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="320" y="1342" />
+              </Array>
+              <mxPoint x="279" y="1057" as="sourcePoint" />
+              <mxPoint x="190" y="1106" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="stop_45" plantUmlBaseStyle="ellipse;shape=endState;fillColor=#222222;strokeColor=#222222;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-42">
+          <mxCell parent="EtN-v0ARJStxVAuJ8TzY-1" style="ellipse;shape=endState;fillColor=#222222;strokeColor=#222222;" vertex="1">
+            <mxGeometry height="24" width="24" x="186.63" y="1460" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="e_46" plantUmlBaseStyle="endArrow=classic;endSize=8;strokeColor=#181818;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" plantUmlBaseValue="" id="EtN-v0ARJStxVAuJ8TzY-43">
+          <mxCell edge="1" parent="EtN-v0ARJStxVAuJ8TzY-1" source="EtN-v0ARJStxVAuJ8TzY-39" style="endArrow=classic;endSize=8;strokeColor=#181818;exitX=0.5;exitY=1;exitDx=0;exitDy=0;rounded=0;" target="EtN-v0ARJStxVAuJ8TzY-42">
+            <mxGeometry relative="1" as="geometry">
+              <mxPoint x="178" y="1118" as="sourcePoint" />
+              <mxPoint x="178" y="1138" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <mxCell id="EtN-v0ARJStxVAuJ8TzY-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Diagrama de Actividades - Flujo de Cierre Mensual&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="470" x="-36.37" y="-430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
