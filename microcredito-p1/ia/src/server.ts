@@ -308,7 +308,7 @@ app.post('/chat', async (req, res) => {
     if (datos !== undefined) {
       respuesta =
         `Consulta a fecha de corte ${corte}:\n` +
-        JSON.stringify(sinDatosSensibles(datos), null, 2);
+        resumirConsulta(sinDatosSensibles(datos));
     }
     // El modelo solo redacta resultados obtenidos de la API.
     // Nunca controla los pagos ni modifica los calculos.
@@ -461,3 +461,47 @@ const puerto = Number(process.env.PORT ?? 3100);
 app.listen(puerto, '127.0.0.1', () => {
   console.log(`IA SGMC escuchando en http://localhost:${puerto}`);
 });
+
+function resumirConsulta(datos: unknown): string {
+  if (!datos || typeof datos !== 'object' || Array.isArray(datos)) {
+    return JSON.stringify(datos, null, 2);
+  }
+  const d = datos as Record<string, unknown>;
+  const lineas: string[] = ['**Resumen de la consulta**', ''];
+  const campos: [string, string][] = [
+    ['clienteId', 'Cliente'],
+    ['creditoId', 'Crédito'],
+    ['asesorId', 'Asesor'],
+    ['fechaCorte', 'Fecha de corte'],
+    ['numeroCuotas', 'Número de cuotas'],
+    ['tnaPorcentaje', 'Tasa anual (%)'],
+    ['estado', 'Estado']
+  ];
+  for (const [clave, etiqueta] of campos) {
+    const valor = d[clave];
+    if (valor !== undefined && valor !== null) {
+      lineas.push(`- **${etiqueta}:** ${String(valor)}`);
+    }
+  }
+  if (typeof d.montoCentavos === 'number') {
+    lineas.push(
+      `- **Monto:** Q ${(d.montoCentavos / 100).toFixed(2)}`
+    );
+  }
+  if (Array.isArray(d.cuotas)) {
+    lineas.push(`- **Cuotas del plan:** ${d.cuotas.length}`);
+  }
+  if (typeof d.modo === 'string') {
+    lineas.push(`- **Origen:** ${d.modo}`);
+  }
+  if (d.modo === 'demostracion-local') {
+    lineas.push(
+      '',
+      '*Datos de demostración; no representan una operación financiera real.*'
+    );
+  }
+  if (lineas.length === 2) {
+    return JSON.stringify(datos, null, 2);
+  }
+  return lineas.join('\n');
+}
