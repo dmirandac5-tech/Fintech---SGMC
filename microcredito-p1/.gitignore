@@ -4,3 +4,7 @@ coverage/
 *.log
 .env
 .env
+# Archivos temporales de integracion
+*.bak
+*.bak-*
+*.tsbuildinfo
